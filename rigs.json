@@ -1,0 +1,93 @@
+{
+  "Testing" : "outcome",
+  "entryLevel":
+  [
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    },
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    },
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    }
+  ],
+  "GreatPerformance":
+  [
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    },
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    },
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    }
+  ],
+  "gaming":
+  [
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    },
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    },
+    {"RigId":"Rig #1234",
+      "Processor" : "Intel core i3",
+      "Motherboard":"Gigabyte",
+      "RAM":"2 GB DDR3",
+      "HDD":"500 GB",
+      "GraphicsCard" : "integrated 2 GB",
+      "PSU":"450 Watt",
+      "Price":"$300"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="span6">
+            <h1 class="muted" style="font-family: Arial, Helvetica, sans-serif; font-size:40px;font-weight:700;font-color">Dream Computers</h1>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-default " style="background:lightcyan">
+    <div class="container-fluid">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" >
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"  style="font-size: medium" href="/"><img src="/images/logo.jpeg" alt="" style="max-width:60px; margin-top: -8px;" ></a>
+            <a class="navbar-brand"  style="font-size: medium" href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+            <a class="navbar-brand"  style="font-size: medium" href="/shop/recRigs">Recommended Rigs</a>
+            {{# if login }}
+
+            {{/if}}
+            <a class="navbar-brand"  style="font-size: medium" href="/gallery"><i class="fa fa-picture-o" aria-hidden="true"></i> Gallery</a>
+            <a class="navbar-brand"  style="font-size: medium" href="/oComp/aboutus" font-size="0.8em"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a>
+            <a class="navbar-brand"  style="font-size: medium" href="/oComp/contact"><i class="fa fa-question" aria-hidden="true"></i> Contact Us</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/itemsCart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Goto Cart
+                    <span class="badge">{{ session.cart.totalItems }}</span>
+                </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        {{# if login }}
+                            <li><a href="/user/profile">My Account</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/user/logout">Logout</a></li>
+                        {{ else }}
+                            <li><a href="/user/signup">Sign up</a></li>
+                            <li><a href="/user/signin">Sign in</a></li>
+                        {{/if}}
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>

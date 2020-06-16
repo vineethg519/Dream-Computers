@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- tabs -->
+
+            <button class="active" style="background:lightblue"><a href ="#home" data-toggle="tab"><span style="text-color:black">Manage Users</span></a></button>
+            <button style="background:lightblue"><a href="#about" data-toggle="tab"><span style="text-color:black">Manage Products</span></a></button>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">
+                    <div class="row col-sd-2  col-md-offset-0.5 custyle">
+
+                        <table class="table table-striped custab">
+                            <thead>
+                            <a href="/admin/addUser" class="btn btn-primary btn-xs pull-right"><b>+</b>Add Users</a>
+                            <tr>
+                                <th>email Id</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                            </thead>
+
+                            {{# each users }}
+                                {{# each this }}
+                                    <tr>
+                                        <!--<td>{{ this }}</td>-->
+                                        <!--<td>{{ this.lastName }}</td>-->
+                                        <td>{{ this.email }}</td>
+                                        <td class="text-center"><a class='btn btn-danger btn-xs' href="/admin/delete_user/{{ this.id }}"><span class="glyphicon"></span>Delete</a></td>
+                                    </tr>
+                                {{/each}}
+                            {{/each}}
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="about">
+                    <div class="">
+                        <div class="row col-sd-2 col-md-offset-0.5 custyle">
+
+                            <table class="table table-striped custab">
+                                <thead>
+                                <a href="/admin/addProduct" class="btn btn-primary btn-xs pull-right"><b>+</b>Add Products</a>
+                                <tr>
+                                    <th>Type </th>
+                                    <th>Brand</th>
+                                    <th>model</th>
+                                    <th>price</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                                </thead>
+
+                                {{# each processor }}
+                                    {{# each this }}
+                                        <tr>
+                                            <td>{{ this.name }}</td>
+                                            <td>{{ this.brand }}</td>
+                                            <td>{{ this.model }}</td>
+                                            <td>${{ this.price }}</td>
+                                            <td class="text-center"><a class='btn btn-info btn-xs' href="/admin/updateProduct/{{ this.id }}"><span class="glyphicon glyphicon-edit"></span> Edit</a>
+                                                <a href="/admin/delete_product/{{this.id}}" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                                        </tr>
+                                    {{/each}}
+                                {{/each}}
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /tabs -->
+    </div>
+</div>
+</div>

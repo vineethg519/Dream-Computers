@@ -1,0 +1,110 @@
+<div class="row col-sd-12 col-md-offset-0.5 custyle">
+    <h1 style="font-family: Times New Roman, Times, serif; text-align: center;background:lightgreen" >Entry Level PC's</h1>
+</div>
+<div class="row col-sd-12 col-md-offset-0.5 custyle">
+        <table class="table table-striped custab" style="background: lightblue">
+            <thead>
+            <tr>
+                <th>Rig ID</th>
+                <th>Processor</th>
+                <th>Motherboard</th>
+                <th>RAM</th>
+                <th>HDD</th>
+                <th>Graphics Card</th>
+                <th>PSU</th>
+                <th>Price</th>
+                <th class="text-center">Action</th>
+            </tr>
+            </thead>
+            {{# each entryItems }}
+                {{# each this }}
+                    <tr>
+                        <td>{{ this.rigId }}</td>
+                        <td>{{ this.processor }}</td>
+                        <td>{{ this.motherBoard }}</td>
+                        <td>{{ this.ram }}</td>
+                        <td>{{ this.hdd }}</td>
+                        <td>{{ this.graphicCardd }}</td>
+                        <td>{{ this.psu }}</td>
+                        <td>{{ this.price }}</td>
+                        <td class="text-center"><a class='btn btn-success btn-xs' href="/addrigs/{{ this.id }}"><span class="glyphicon"></span>Add to Cart</a></td>
+                    </tr>
+                {{/each}}
+            {{/each}}
+
+        </table>
+    </div>
+
+<div class="row col-sd-12 col-md-offset-0.5 custyle">
+    <h1 style=" font-family: Times New Roman, Times, serif;text-align: center;background:lightsalmon">Great Performance PC's</h1>
+</div>
+<div class="row col-sd-12 col-md-offset-0.5 custyle">
+    <table class="table table-striped custab"  style="background: lightblue">
+        <thead>
+        <tr>
+            <th>Rig ID</th>
+            <th>Processor</th>
+            <th>Motherboard</th>
+            <th>RAM</th>
+            <th>HDD</th>
+            <th>Graphics Card</th>
+            <th>PSU</th>
+            <th>Price</th>
+            <th class="text-center">Action</th>
+        </tr>
+        </thead>
+        {{# each greatItems }}
+            {{# each this }}
+                <tr>
+                    <td>{{ this.rigId }}</td>
+                    <td>{{ this.processor }}</td>
+                    <td>{{ this.motherBoard }}</td>
+                    <td>{{ this.ram }}</td>
+                    <td>{{ this.hdd }}</td>
+                    <td>{{ this.graphicCardd }}</td>
+                    <td>{{ this.psu }}</td>
+                    <td>{{ this.price }}</td>
+                    <td class="text-center"><a class='btn btn-success btn-xs' href="/addgreat/{{ this.id }}"><span class="glyphicon"></span>Add to Cart</a></td>
+                </tr>
+            {{/each}}
+        {{/each}}
+
+    </table>
+</div>
+
+<div class="row col-sd-12 col-md-offset-0.5 custyle">
+    <h1 style="font-family: Times New Roman, Times, serif; text-align: center;background:lightgreen">Gaming PC's</h1>
+</div>
+<div class="row col-sd-12 col-md-offset-0.5 custyle">
+    <table class="table table-striped custab"  style="background: lightblue">
+        <thead>
+        <tr>
+            <th>Rig ID</th>
+            <th>Processor</th>
+            <th>Motherboard</th>
+            <th>RAM</th>
+            <th>HDD</th>
+            <th>Graphics Card</th>
+            <th>PSU</th>
+            <th>Price</th>
+            <th class="text-center">Action</th>
+        </tr>
+        </thead>
+        {{# each gameItems }}
+            {{# each this }}
+                <tr>
+                    <td>{{ this.rigId }}</td>
+                    <td>{{ this.processor }}</td>
+                    <td>{{ this.motherBoard }}</td>
+                    <td>{{ this.ram }}</td>
+                    <td>{{ this.hdd }}</td>
+                    <td>{{ this.graphicCardd }}</td>
+                    <td>{{ this.psu }}</td>
+                    <td>{{ this.price }}</td>
+                    <td class="text-center"><a class='btn btn-success btn-xs' href="/addGame/{{ this.id }}"><span class="glyphicon"></span>Add to Cart</a></td>
+                </tr>
+            {{/each}}
+        {{/each}}
+
+    </table>
+</div>

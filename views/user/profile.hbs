@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- tabs -->
+            <div class="tabbable tabs-left">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">Buy Pc Components</a></li>
+                    <li><a href="#about" data-toggle="tab">Account details</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home">
+                        <div class="row col-sd-2 col-md-offset-0.5 custyle">
+
+                            <table class="table table-striped custab">
+                                <thead>
+                                <tr>
+                                    <th>Type </th>
+                                    <th>Brand</th>
+                                    <th>model</th>
+                                    <th>price</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                                </thead>
+
+                                {{# each processor }}
+                                    {{# each this }}
+                                        <tr>
+                                            <td>{{ this.name }}</td>
+                                            <td>{{ this.brand }}</td>
+                                            <td>{{ this.model }}</td>
+                                            <td>${{ this.price }}</td>
+                                            <td class="text-center"><a class='btn btn-success btn-xs' href="/adduserProd/{{ this.id }}"><span class="glyphicon"></span>Add to Cart</a></td>
+                                        </tr>
+                                    {{/each}}
+                                {{/each}}
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="about">
+                        <div class="">
+                            <div class="row col-sd-2  col-md-offset-0.5 custyle">
+
+                                <table class="table table-striped custab">
+                                    <thead>
+                                    <tr>
+                                        <th>email Id</th>
+                                        <th class="text-center">Edit</th>
+                                    </tr>
+                                    </thead>
+
+                                    {{# each users }}
+                                        {{# each this }}
+                                            <tr>
+                                                <!--<td>{{ this }}</td>-->
+                                                <!--<td>{{ this.lastName }}</td>-->
+                                                <td>{{ this.email }}</td>
+                                                <td class="text-center"><a class='btn btn-danger btn-xs' href="/admin/delete_user/{{ this.id }}"><span class="glyphicon"></span>Delete</a></td>
+                                            </tr>
+                                        {{/each}}
+                                    {{/each}}
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /tabs -->
+        </div>
+    </div>
+</div>
+
+
